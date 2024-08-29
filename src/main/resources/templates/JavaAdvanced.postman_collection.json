@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "85651233-344a-4ac7-b268-3d8d165aae12",
+		"name": "JavaAdvanced",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "665263"
+	},
+	"item": [
+		{
+			"name": "addresses/search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/addresses2/search?searchTerm=L",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"addresses2",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchTerm",
+							"value": "L"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dictionary/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ptWord\": \"teste4\",\r\n    \"enWord\": \"test4\",\r\n    \"ptMeaning\": \"teste do servico 4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dictionary/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dictionary",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dictionary/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dictionary/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dictionary",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dictionary/update/id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ptWord\": \"teste3\",\r\n    \"enWord\": \"test3\",\r\n    \"ptMeaning\": \"teste do servico 3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dictionary/update/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dictionary",
+						"update",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dictionary/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dictionary/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dictionary",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dictionary/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dictionary/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dictionary",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dictionary/search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dictionary/search?searchTerm=tes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dictionary",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchTerm",
+							"value": "tes"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
